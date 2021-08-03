@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="/stylesheets/home.css">
 </head>
 
-<body class="d-flex text-center text-white bg-dark">
-    <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
+<body class="text-center text-white">
+    <div class="container d-flex w-100 h-100 p-3  flex-column">
+        <header class="mb-3  mb-sm-auto">
             <div>
                 <h3 class="float-start mb-0">YelpCamp</h3>
-                <nav class="nav nav-masthead justify-content-center float-end">
+                <nav class="nav nav-masthead  float-end">
                     <% if(!currentUser) { %>
                         <a class="nav-link" aria-current="page" href="/login">Login</a>
                         <a class="nav-link" aria-current="page" href="/register">Register</a>
@@ -26,14 +26,14 @@
                 </nav>
             </div>
         </header>
-        <main class="px-3">
-            <h1>YelpCamp</h1>
-            <p class="lead text-scale">Welcome to YelpCamp! <br> Jump right in and explore our many campgrounds. <br>
-                Feel free to share some of your own and comment on others!</p>
+        <main class="mt-auto mb-5 mt-sm-3">
+            <h1>Welcome to YelpCamp!</h1>
+            <p class="lead"> Jump right in and explore our many<br> campgrounds.
+                Feel free to share some of<br> your own and comment on others!</p>
             <a href="/campgrounds" class="btn btn-sm  btn-secondary fw-bold  border-white bg-white">View
                 Campgrounds</a>
         </main>
-        <footer class="mt-auto text-white-50">
+        <footer class="mt-sm-auto text-white-50">
             <p>&copy; 2021 YelpCamp</p>
         </footer>
     </div>
