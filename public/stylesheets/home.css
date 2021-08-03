@@ -30,3 +30,9 @@ body {
 .btn-secondary:hover {
     color: rgb(32, 32, 32);
 }
+
+@media (max-width: 576px){
+  .text-scale {
+    color: red;
+  }
+}
