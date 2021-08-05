@@ -5,16 +5,15 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 
 ![home](screenshots/home.png)
 
-![campgrounds](screenshots/campgrounds.png)
-
 ![show](screenshots/show.png)
 
-![register](screenshots/login.png)
+---
 
-## Features
-- Users can create, edit, and remove campgrounds
-- All campgrounds are displayed on the world map
-- On the world map, the users can open any campgrounds and get more detailed information about it
-- User passwords are protected by hashing using salt
-- The database is protected from NoSQL injection by Express Mango Sanitize
-- The application is partially protected from Cross Site Scripting by Joi + Sanitize Html
+All campgrounds are displayed on the world map, users can open any campgrounds and get more detailed information about it
+
+![campgrounds](screenshots/campgrounds.png)
+
+---
+User passwords are protected by hashing using salt.The database is protected from NoSQL injection by Express Mango Sanitize.The application is partially protected from Cross Site Scripting by Joi + Sanitize Html
+
+![register](screenshots/login.png)
