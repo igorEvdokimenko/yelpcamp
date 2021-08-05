@@ -7,13 +7,13 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 
 ---
 
-![show](screenshots/show.png)
-
----
-
 All campgrounds are displayed on the world map, users can open any campgrounds and get more detailed information about it
 
 ![campgrounds](screenshots/campgrounds.png)
+
+---
+
+![show](screenshots/show.png)
 
 ---
 User passwords are protected by hashing using salt.The database is protected from NoSQL injection by Express Mango Sanitize.The application is partially protected from Cross Site Scripting by Joi + Sanitize Html
