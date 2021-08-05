@@ -3,7 +3,8 @@ const Campground = require('../models/campground')
 const cities = require('./cities');
 const { places, descriptors } = require('./seedHelpers')
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+
+mongoose.connect("mongodb+srv://master:bh9jc8L3T6ifRfEq@cluster0.ae3k2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
@@ -23,7 +24,7 @@ const seedDB = async () => {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 20 + 10);
         const camp = new Campground({
-            author: '60f981a2a5333b18a4524c5a',
+            author: '6106e8029baa580015661494',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             geometry: {
@@ -37,10 +38,6 @@ const seedDB = async () => {
                 {
                     url: 'https://res.cloudinary.com/dvvroi2xd/image/upload/v1627206210/YelpCamp/s4l1quzzulb3urkaddlk.jpg',
                     filename: 'YelpCamp/s4l1quzzulb3urkaddlk'
-                },
-                {
-                    url: 'https://res.cloudinary.com/dvvroi2xd/image/upload/v1627206366/YelpCamp/wmek034vzq2aw5mowlyr.jpg',
-                    filename: 'YelpCamp/wmek034vzq2aw5mowlyr'
                 }
             ],
             description: 'Spend your day on the water kayaking through the 200 foot sand stone cliffs of the majestic',
