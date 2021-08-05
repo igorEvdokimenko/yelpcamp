@@ -5,6 +5,8 @@ This project was created using Node.js, Express, MongoDB, and Bootstrap. Passpor
 
 ![home](screenshots/home.png)
 
+---
+
 ![show](screenshots/show.png)
 
 ---
