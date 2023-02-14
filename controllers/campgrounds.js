@@ -6,7 +6,8 @@ const { cloudinary } = require("../cloudinary");
 
 module.exports.index = async (req, res) => {
     const campgrounds = await Campground.find({});
-    res.render('campgrounds/index', { campgrounds })
+    const revCampgrounds = campgrounds.reverse();
+    res.render('campgrounds/index', { revCampgrounds })
 }
 
 module.exports.newCampgroundForm = (req, res) => {
